@@ -8,10 +8,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Startup Name Generator',
-      theme: ThemeData(
-        primaryColor: Colors.yellow
-      ),
+      theme: ThemeData(primaryColor: Colors.amberAccent[700]),
       home: RandomWords(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -40,7 +39,7 @@ class RandomWordsState extends State<RandomWords> {
               );
             },
           );
-
+          
           final divided = ListTile
               .divideTiles(
                 context: context,
@@ -49,6 +48,7 @@ class RandomWordsState extends State<RandomWords> {
               .toList();
 
           return Scaffold(
+            backgroundColor: Colors.yellow[100],
             appBar: AppBar(
               title: Text("Sugerencias guardadas"),
             ),
@@ -62,6 +62,7 @@ class RandomWordsState extends State<RandomWords> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.yellow[200],
       appBar: AppBar(
         title: Text('Generador de nombres'),
         actions: <Widget>[
