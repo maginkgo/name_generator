@@ -4,5 +4,6 @@ A new Flutter project.
 
 ## Getting Started
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+<img src="https://github.com/maginkgo/name_generator/blob/master/screnshot1.jpg" width="300">
+
+<img src="https://github.com/maginkgo/name_generator/blob/master/screnshot2.jpg" width="300">
