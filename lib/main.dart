@@ -36,10 +36,20 @@ class RandomWordsState extends State<RandomWords> {
                   pair.asPascalCase,
                   style: _biggerFont,
                 ),
+                trailing: Icon(
+                  Icons.delete,
+                ),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  setState(() {                
+                    _saved.remove(pair);
+                    _pushSaved();
+                  });
+                },
               );
             },
           );
-          
+
           final divided = ListTile
               .divideTiles(
                 context: context,
